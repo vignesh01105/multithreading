@@ -17,7 +17,7 @@ public class MultithreadingController {
     @GetMapping("/call-apis")
     public String callMultipleAPI() {
         // Logic to call multiple APIs concurrently
-        multithreadingService.callMultipleAPI();
-        return "APIs called successfully";
+        String response = multithreadingService.callMultipleAPI();
+        return response;
     }
 }
